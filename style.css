@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: whitesmoke;;
 }
 
 #nav-container {
     width: 100vw;
-    border: 1px solid black;
+    border-bottom: 2px solid black;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -18,10 +19,16 @@
 #nav-container h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
+    letter-spacing: 1px;
+    -webkit-transition: 0.2s;
+}
+
+#nav-container h1:hover {
+    letter-spacing: -1px;
 }
 
 #nav-shop-container, #nav-projects-container, #nav-logo-container, #nav-about-container, #nav-contact-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
     width: 20%;
     display: flex;
@@ -43,12 +50,31 @@
 
 
 #business-card-container {
+    background-image: url("gif-bg.mp4");
+    
     width: 100vw;
     height: 100vh;
-    border: 1px solid black;
+    /* background: #F6F1EB; */
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.business-card-container-column h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+#first-container, #second-container, #third-container, #fourth-container {
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 40%;
+}
+
+#fourth-container, #second-container {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .business-card-container-column:nth-of-type(1), .business-card-container-column:nth-of-type(3) {
@@ -56,12 +82,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.business-card-container-column:nth-of-type(1) div, .business-card-container-column:nth-of-type(3) div {
-    border: 1px solid red;
-    width: 100%;
-    height: 40%;
 }
 
 .business-card-container-column:nth-of-type(2) {
@@ -72,7 +92,7 @@
 }
 
 .business-card-container-column:nth-of-type(2) div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: left;
 }
 
@@ -83,12 +103,11 @@
 }
 
 .business-card-container-column:nth-of-type(2) div h1:nth-of-type(2) {
-    font-family: 'IM Fell English', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .business-card-container-column {
     height: 100vh;
-    border: 1px solid green;
     width: 33%;
 }
 
