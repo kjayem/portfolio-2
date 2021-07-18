@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: whitesmoke;;
+    /* background: whitesmoke; */
 }
 
 #nav-container {
@@ -14,11 +14,12 @@
     position: fixed;
     z-index: 1000;
     background: whitesmoke;
+    
 }
 
 #nav-container h1 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1px;
     -webkit-transition: 0.2s;
 }
@@ -48,13 +49,10 @@
 
 
 
-
 #business-card-container {
-    background-image: url("gif-bg.mp4");
-    
     width: 100vw;
     height: 100vh;
-    /* background: #F6F1EB; */
+    background: #F6F1EB;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,14 +60,14 @@
 
 .business-card-container-column h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #first-container, #second-container, #third-container, #fourth-container {
     text-align: center;
-    /* border: 1px solid red; */
     width: 100%;
     height: 40%;
+    
 }
 
 #fourth-container, #second-container {
@@ -82,6 +80,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .business-card-container-column:nth-of-type(2) {
@@ -89,27 +88,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-image: url("gif-bg.mov");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
 }
 
 .business-card-container-column:nth-of-type(2) div {
     /* border: 1px solid red; */
     text-align: left;
+    border-bottom: 2px solid black;
+    padding: 10px;
 }
 
 .business-card-container-column:nth-of-type(2) div h1:nth-of-type(1) {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
     font-size: 50px;
-    font-weight: bold;
 }
 
 .business-card-container-column:nth-of-type(2) div h1:nth-of-type(2) {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poiret One', cursive;
 }
 
 .business-card-container-column {
     height: 100vh;
     width: 33%;
 }
+
 
 
 
