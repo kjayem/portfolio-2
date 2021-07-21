@@ -52,7 +52,7 @@
 #business-card-container {
     width: 100vw;
     height: 100vh;
-    background: #F6F1EB;
+    /* background: #F6F1EB; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -80,7 +80,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    /* background: #DDD8D4; */
 }
 
 .business-card-container-column:nth-of-type(2) {
@@ -91,13 +91,12 @@
     /* background-image: url("gif-bg.mov");
     background-size: cover;
     background-repeat: no-repeat; */
-    
 }
 
 .business-card-container-column:nth-of-type(2) div {
     /* border: 1px solid red; */
     text-align: left;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     padding: 10px;
 }
 
