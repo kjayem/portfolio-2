@@ -92,55 +92,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: violet;
-    text-transform: uppercase;
+    width: 70%;
     /* background-image: url("gif-bg.mov");
     background-size: cover;
     background-repeat: no-repeat; */
-    overflow: hidden;
-    border: 1px solid red;
-    position: relative;
+    /* border: 1px solid red; */
 }
 
-.scroll {
-    width: 100%;
-    display: flex;
+.business-card-container-column:nth-of-type(2) div {
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
 }
-
-.scroll div {
-    font-size: 4em;
-    white-space: nowrap;
-    animation: animate 10s linear infinite;
-    /* animation-delay: s;   */
-}
-
-.scroll div:nth-child(2) {
-    animation: animate2 10s linear infinite;  
-    /* animation-delay: -20s;   */
-}
-
-@keyframes animate {
-    0% {   
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-    
-}
-
-@keyframes animate2 {
-    0% {   
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-200%);
-    }
-    
-}
-
-
 
 
 .business-card-container-column {
