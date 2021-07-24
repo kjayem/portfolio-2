@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: whitesmoke; */
+}
+
+body {
+    background: whitesmoke;
+}
+
+#nav-container {
+    width: 100vw;
+    border-bottom: 2px solid black;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1000;
+    background: whitesmoke;
+}
+
+#nav-container a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-left, #nav-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-left div {
+    width: 33%;
+    text-align: center;
+}
+
+#nav-left div h1, #nav-right div h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+}
+
+#nav-middle {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#nav-middle h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#search-container {
+    overflow: hidden;
+    width: 120px;
+    margin-left: auto;
+    padding-right: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    height: 20px;
+}
+
+#search-container #slide {
+    align-self: flex-end;
+    margin-left: -15px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    bottom: 20px;
+}
+
+#nav-right input[type=text] {
+    background: whitesmoke;
+    border: none;
+    width: 80px;
+    z-index: 9999;
+    text-align: right;
+    padding-left: 8px;
+    font-size: 10px;
+    border-bottom: 1px solid rgb(107, 107, 107);
+    font-family: 'Comfortaa', cursive;
+}
+
+#nav-right input[type=text]:focus {
+    outline: none;
+}
+
+
+#nav-right div:nth-of-type(2) {
+    text-align: center;
+    width: 100px;
+    margin-right: 5%;
+}
+
+#nav-right div:nth-of-type(3) {
+    text-align: center;
+    width: 20%;
+}
+
+#nav-right div:nth-of-type(4) {
+    margin-right: 10%;
+    margin-left: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#business-card-container {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.business-card-container-column h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+#first-container, #second-container, #third-container, #fourth-container {
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    
+}
+
+#fourth-container, #second-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.business-card-container-column:nth-of-type(1), .business-card-container-column:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border: 1px solid red;
+    /* width: 20vw; */
+}
+
+.business-card-container-column:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    /* background-image: url("gif-bg.mov");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* border: 1px solid red; */
+}
+
+.business-card-container-column:nth-of-type(2) div {
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+.business-card-container-column {
+    height: 100vh;
+    width: 33%;
+}
+
+
+
+
+
+
+#shop-container {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+#shop-container {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+#projects-container {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+#contact-container {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+footer {
+    width: 100vw;
+    height: 300px;
+    border: 1px solid black;
+}
