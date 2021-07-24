@@ -4,23 +4,28 @@ var language = {
         "nav about": "ABOUT",
         "nav collection": "COLLECTION",
         "nav shop": "SHOP",
+        "nav service" : "SERVICE",
         "nav login": "LOGIN",
+        "nav bag" : "BAG",
+        "see full collection" : "SEE FULL COLLECTION"
     },
     "kr":{
         "nav about": "소개",
         "nav collection": "컬렉션",
         "nav shop": "제품",
+        "nav service" : "고객센터",
         "nav login": "로그인",
+        "nav bag" : "쇼핑백",
+        "see full collection" : "컬렉션 보기"
     }
 }
-
 
 //change language button
 var langButton = document.getElementById('change-language');
 langButton.addEventListener('click', changeLang);
 
 function changeLang() {
-    var textToTranslate = document.querySelectorAll(".nav-lang")
+    var textToTranslate = document.querySelectorAll(".translatable")
     var koreanCategory = [];
     var koreanKey = Object.keys(language.kr);
     var englishCategory = [];
